@@ -11,7 +11,7 @@
     "handle": "janedoe",
     "display_name": "Jane Doe",
     "tagline": "design · writing · the occasional cinnamon bun",
-    "avatar": "/avatar.jpg",
+    "avatar": "/avatar-placeholder.svg",
     "show_avatar": true,
     "show_handle": true,
     "show_tagline": true

@@ -57,7 +57,7 @@ Open `config/site.config.json`:
     "handle": "yourhandle",
     "display_name": "Your Name",
     "tagline": "what you do · what you make · vibes",
-    "avatar": "/avatar.jpg",
+    "avatar": "/avatar-placeholder.svg",
     "show_avatar": true,
     "show_handle": true,
     "show_tagline": true
@@ -69,9 +69,11 @@ Open `config/site.config.json`:
 }
 ```
 
-Pick a theme: `academic`, `minimal`, `terminal`, `dark-space`. See [`THEMES.md`](THEMES.md).
+**Avatar:** Drop a square image at `public/avatar.jpg` (or `.png`/`.webp`) and set `profile.avatar` to match the filename. Recommended: 256×256px or larger, square crop, under 100 KB. The page renders it at 96×96px CSS with `object-fit: cover`, so any square image works. A placeholder SVG is included — replace it with your own photo or set `"show_avatar": false` to hide it.
 
-Drop a square avatar at `public/avatar.jpg` (256+px recommended, JPEG or PNG). Or set `show_avatar: false`.
+**Social sharing image (OG image):** For link previews on Twitter/Slack/etc., add a 1200×630px image to `public/` (e.g. `public/og.png`) and set `social_meta.og_image` in your config to the full URL (e.g. `"https://your-project.vercel.app/og.png"`). Without this, shared links show no preview image.
+
+Pick a theme: `academic`, `minimal`, `terminal`, `dark-space`. See [`THEMES.md`](THEMES.md).
 
 ## Step 4 — Add your links
 

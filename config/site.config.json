@@ -11,7 +11,7 @@
     "handle": "ernestyalumni",
     "display_name": "Ernest Yeung",
     "tagline": "Physics · Math · Rocket Propulsion · Software",
-    "avatar": "/avatar.jpg",
+    "avatar": "/avatar-placeholder.svg",
     "show_avatar": true,
     "show_handle": true,
     "show_tagline": true
@@ -24,6 +24,10 @@
     "show": true,
     "credit": "© Ernest Yeung",
     "show_powered_by": true
+  },
+  "social_meta": {
+    "og_image": "",
+    "twitter_card": "summary"
   },
   "analytics": {
     "provider": "none"
