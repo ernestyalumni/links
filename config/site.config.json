@@ -1,16 +1,16 @@
 {
   "$schema": "../../config/site.config.schema.json",
   "site": {
-    "title": "Ernest Yeung — Links",
-    "description": "Physics, Math, Rocket Propulsion, Software.",
-    "url": "https://ernestyalumni-links.vercel.app",
+    "title": "Your Name — Links",
+    "description": "A short bio or tagline.",
+    "url": "https://your-project.vercel.app",
     "language": "en",
     "favicon": "/favicon.svg"
   },
   "profile": {
-    "handle": "ernestyalumni",
-    "display_name": "Ernest Yeung",
-    "tagline": "Physics · Math · Rocket Propulsion · Software",
+    "handle": "yourhandle",
+    "display_name": "Your Name",
+    "tagline": "what you do · what you make",
     "avatar": "/avatar-placeholder.svg",
     "show_avatar": true,
     "show_handle": true,
@@ -22,7 +22,7 @@
   },
   "footer": {
     "show": true,
-    "credit": "© Ernest Yeung",
+    "credit": "© Your Name",
     "show_powered_by": true
   },
   "social_meta": {
