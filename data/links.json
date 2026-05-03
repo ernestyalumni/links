@@ -1,42 +1,5 @@
 {
   "$schema": "../../data/links.schema.json",
   "_note": "Empty by design — start fresh with curated current links rather than migrating stale Linktree entries. Old entries preserved in archive.json.",
-  "links": [
-    {
-      "id": "github",
-      "title": "GitHub",
-      "url": "https://github.com/ernestyalumni",
-      "icon": "⬢",
-      "tags": [],
-      "position": 1,
-      "added_at": "2026-05-03"
-    },
-    {
-      "id": "youtube",
-      "title": "YouTube",
-      "url": "https://www.youtube.com/@ErnestYAlumni",
-      "icon": "▶",
-      "tags": [],
-      "position": 2,
-      "added_at": "2026-05-03"
-    },
-    {
-      "id": "linkedin",
-      "title": "LinkedIn",
-      "url": "https://www.linkedin.com/in/ernestyalumni/",
-      "icon": "💼",
-      "tags": [],
-      "position": 3,
-      "added_at": "2026-05-03"
-    },
-    {
-      "id": "x",
-      "title": "X",
-      "url": "https://x.com/ernestyalumni",
-      "icon": "𝕏",
-      "tags": [],
-      "position": 4,
-      "added_at": "2026-05-03"
-    }
-  ]
+  "links": []
 }
