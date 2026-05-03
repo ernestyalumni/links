@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Site Config",
+  "description": "Single source of truth for site-wide branding and behavior.",
+  "type": "object",
+  "required": ["site", "profile", "theme"],
+  "properties": {
+    "site": {
+      "type": "object",
+      "required": ["title", "description", "url"],
+      "properties": {
+        "title": { "type": "string", "description": "Browser tab title and meta title" },
+        "description": { "type": "string", "description": "Meta description (~160 chars max recommended)" },
+        "url": { "type": "string", "format": "uri", "description": "Canonical site URL" },
+        "language": { "type": "string", "default": "en", "description": "BCP-47 language code" },
+        "favicon": { "type": "string", "description": "Path under /public" }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "required": ["display_name"],
+      "properties": {
+        "handle": { "type": "string", "description": "@username (without @)" },
+        "display_name": { "type": "string" },
+        "tagline": { "type": "string" },
+        "avatar": { "type": "string", "description": "Path under /public, square recommended" },
+        "show_avatar": { "type": "boolean", "default": true },
+        "show_handle": { "type": "boolean", "default": true },
+        "show_tagline": { "type": "boolean", "default": true }
+      }
+    },
+    "theme": {
+      "type": "object",
+      "properties": {
+        "preset": {
+          "type": "string",
+          "enum": ["academic", "minimal", "terminal", "dark-space"],
+          "default": "academic"
+        },
+        "color_scheme": {
+          "type": "string",
+          "enum": ["light", "dark", "auto"],
+          "default": "auto"
+        },
+        "fonts": {
+          "type": "object",
+          "properties": {
+            "primary": { "type": "string" },
+            "fallback": { "type": "string" }
+          }
+        }
+      }
+    },
+    "footer": {
+      "type": "object",
+      "properties": {
+        "show": { "type": "boolean", "default": true },
+        "credit": { "type": "string", "description": "HTML-safe small credit line" },
+        "show_powered_by": { "type": "boolean", "default": true }
+      }
+    },
+    "analytics": {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "type": "string",
+          "enum": ["none", "plausible", "umami"],
+          "default": "none"
+        },
+        "domain": { "type": "string", "description": "Plausible domain or Umami site id" },
+        "script_url": { "type": "string", "description": "Self-hosted script URL" }
+      }
+    },
+    "social_meta": {
+      "type": "object",
+      "properties": {
+        "og_image": { "type": "string" },
+        "twitter_card": {
+          "type": "string",
+          "enum": ["summary", "summary_large_image"],
+          "default": "summary"
+        }
+      }
+    }
+  }
+}

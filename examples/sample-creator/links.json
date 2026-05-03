@@ -1,0 +1,42 @@
+{
+  "$schema": "../../data/links.schema.json",
+  "links": [
+    {
+      "id": "portfolio",
+      "title": "Portfolio",
+      "url": "https://janedoe.com",
+      "icon": "✦",
+      "tags": ["main"],
+      "position": 1,
+      "added_at": "2026-05-03",
+      "highlight": true
+    },
+    {
+      "id": "newsletter",
+      "title": "Weekly Newsletter",
+      "url": "https://janedoe.substack.com",
+      "icon": "✉",
+      "tags": ["writing"],
+      "position": 2,
+      "added_at": "2026-05-03"
+    },
+    {
+      "id": "github",
+      "title": "GitHub",
+      "url": "https://github.com/janedoe",
+      "icon": "⬢",
+      "tags": ["code"],
+      "position": 3,
+      "added_at": "2026-05-03"
+    },
+    {
+      "id": "instagram",
+      "title": "Instagram",
+      "url": "https://instagram.com/janedoe",
+      "icon": "◐",
+      "tags": ["social"],
+      "position": 4,
+      "added_at": "2026-05-03"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "$schema": "../../config/site.config.schema.json",
+  "site": {
+    "title": "Jane Doe — Links",
+    "description": "Designer, writer, occasional baker.",
+    "url": "https://jane-links.vercel.app",
+    "language": "en",
+    "favicon": "/favicon.svg"
+  },
+  "profile": {
+    "handle": "janedoe",
+    "display_name": "Jane Doe",
+    "tagline": "design · writing · the occasional cinnamon bun",
+    "avatar": "/avatar.jpg",
+    "show_avatar": true,
+    "show_handle": true,
+    "show_tagline": true
+  },
+  "theme": {
+    "preset": "minimal",
+    "color_scheme": "auto"
+  },
+  "footer": {
+    "show": true,
+    "credit": "© Jane Doe",
+    "show_powered_by": true
+  },
+  "analytics": {
+    "provider": "none"
+  }
+}

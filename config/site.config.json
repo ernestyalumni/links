@@ -1,0 +1,31 @@
+{
+  "$schema": "../../config/site.config.schema.json",
+  "site": {
+    "title": "Ernest Yeung — Links",
+    "description": "Physics, Math, Rocket Propulsion, Software.",
+    "url": "https://ernestyalumni-links.vercel.app",
+    "language": "en",
+    "favicon": "/favicon.svg"
+  },
+  "profile": {
+    "handle": "ernestyalumni",
+    "display_name": "Ernest Yeung",
+    "tagline": "Physics · Math · Rocket Propulsion · Software",
+    "avatar": "/avatar.jpg",
+    "show_avatar": true,
+    "show_handle": true,
+    "show_tagline": true
+  },
+  "theme": {
+    "preset": "academic",
+    "color_scheme": "auto"
+  },
+  "footer": {
+    "show": true,
+    "credit": "© Ernest Yeung",
+    "show_powered_by": true
+  },
+  "analytics": {
+    "provider": "none"
+  }
+}
