@@ -1,0 +1,22 @@
+{
+  "profile": {
+    "handle": "ernestyalumni",
+    "display_name": "Ernest Yeung",
+    "tagline": "Physics · Math · Rocket Propulsion · Software",
+    "avatar": "/avatar.jpg",
+    "show_avatar": true
+  },
+  "links": [],
+  "_schema": {
+    "link": {
+      "id": "stable slug, e.g. github-main",
+      "title": "display title",
+      "url": "https://...",
+      "icon": "optional emoji or icon name",
+      "tags": ["array of strings, used for grouping/filtering later"],
+      "position": "integer, lower = higher on page",
+      "added_at": "YYYY-MM-DD",
+      "click_estimate": "optional integer carried over from old platform"
+    }
+  }
+}
