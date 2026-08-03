@@ -14,44 +14,39 @@ identity assets** (avatar, OG banner, favicon).
 | TikTok | https://www.tiktok.com/@clawdj6 |
 | GitHub | https://github.com/InServiceOfX/claw-dj |
 
-## Do **not** overwrite the personal `ernestyalumni` deploy by accident
+## Production branch (already set up in git)
 
-This monorepo’s active `config/` + `data/` may already power
-`ernestyalumni-links`. For claw-dj, prefer a **separate Vercel project** (or a
-dedicated branch/worktree) so both pages stay live.
+Active deploy branch: **`deploy/claw-dj`** (pushed to `origin`).
 
-### Option A — separate clone (recommended)
+- Config/data on that branch are the claw-dj profile.
+- Personal Ernest page stays on **`deploy/ernestyalumni`**.
+- Full Vercel second-project wiring: [`docs/DEPLOY_CLAW_DJ.md`](../../docs/DEPLOY_CLAW_DJ.md).
 
 ```sh
-git clone https://github.com/ernestyalumni/links.git claw-dj-links
-cd claw-dj-links
+git checkout deploy/claw-dj
+git pull
 npm install
-python3 scripts/apply-example.py --name claw-dj
-
-# After you generate art on the 3060 box:
-#   public/avatar.jpg   (square, ≥512px, <150 KB ideal)
-#   public/og.png       (1200×630)
-# optional: public/favicon.svg
-
 python3 scripts/validate.py
-npm run build
 npm run dev   # http://localhost:4321
 ```
 
-Then create a new Vercel project from `claw-dj-links`, set production domain
-idea: `claw-dj-links.vercel.app` (or a custom domain). Update
-`site.url` and `social_meta.og_image` in `config/site.config.json` to the real
-URL after first deploy.
+### Second Vercel project (required for a public production URL)
 
-### Option B — apply inside this repo on a feature branch
+Same GitHub repo, **new** Vercel project named e.g. `claw-dj-links`, with
+**Production Branch = `deploy/claw-dj`**. Do not retarget the personal project’s
+production branch. See `docs/DEPLOY_CLAW_DJ.md` for dashboard + CLI steps.
 
-```sh
-git checkout -b deploy/claw-dj
-python3 scripts/apply-example.py --name claw-dj
-# add public/avatar.jpg + public/og.png
-python3 scripts/validate.py && npm run build
-# deploy that branch to a *second* Vercel project, not the ernestyalumni one
+After deploy, set `site.url` (and later `social_meta.og_image`) to the real host.
+
+### Assets after you generate brand art
+
+```text
+public/avatar.jpg   # square, ≥512px, <150 KB ideal
+public/og.png       # 1200×630
+# optional: public/favicon.svg
 ```
+
+Then set `profile.avatar` to `"/avatar.jpg"` and push.
 
 ## After assets land
 
