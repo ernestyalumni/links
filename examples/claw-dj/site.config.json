@@ -1,8 +1,8 @@
 {
   "$schema": "../../config/site.config.schema.json",
   "site": {
-    "title": "claw-dj \u2014 Links",
-    "description": "Hip-hop & R&B anthology mixes: phrase-aware DJing, short-form clips, full sets on YouTube.",
+    "title": "claw-dj — Links",
+    "description": "90s hip-hop & R&B DJ mixes — sample lineages, full sets, and short transition clips. Built with software + AI (open source).",
     "url": "https://claw-dj-links.vercel.app",
     "language": "en",
     "favicon": "/favicon.svg"
@@ -10,8 +10,8 @@
   "profile": {
     "handle": "claw-dj",
     "display_name": "claw-dj",
-    "tagline": "Hip-hop & R&B anthologies \u00b7 phrase-aware mixes \u00b7 short-form clips",
-    "avatar": "/avatar-placeholder.svg",
+    "tagline": "All Night Long sample mixes · 90s hip-hop & R&B · Shorts + full sets",
+    "avatar": "/avatar.jpg",
     "show_avatar": true,
     "show_handle": true,
     "show_tagline": true
@@ -22,11 +22,11 @@
   },
   "footer": {
     "show": true,
-    "credit": "\u00a9 claw-dj",
+    "credit": "© claw-dj",
     "show_powered_by": true
   },
   "social_meta": {
-    "og_image": "",
+    "og_image": "https://claw-dj-links.vercel.app/og.png",
     "twitter_card": "summary_large_image"
   },
   "analytics": {

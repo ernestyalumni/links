@@ -6,27 +6,35 @@
       "title": "YouTube — full mixes & Shorts",
       "url": "https://www.youtube.com/@claw-dj",
       "icon": "▶",
-      "tags": ["video", "primary"],
+      "tags": [
+        "video",
+        "primary"
+      ],
       "position": 1,
       "added_at": "2026-08-03",
       "highlight": true
     },
     {
       "id": "tiktok",
-      "title": "TikTok — transition clips",
+      "title": "TikTok — transition clips (@clawdj6)",
       "url": "https://www.tiktok.com/@clawdj6",
       "icon": "♫",
-      "tags": ["short-form", "primary"],
+      "tags": [
+        "short-form",
+        "primary"
+      ],
       "position": 2,
       "added_at": "2026-08-03",
       "highlight": true
     },
     {
       "id": "github",
-      "title": "GitHub — claw-dj (open project)",
+      "title": "GitHub — claw-dj (open source)",
       "url": "https://github.com/InServiceOfX/claw-dj",
       "icon": "⬢",
-      "tags": ["code"],
+      "tags": [
+        "code"
+      ],
       "position": 3,
       "added_at": "2026-08-03"
     }
