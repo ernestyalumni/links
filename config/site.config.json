@@ -2,7 +2,7 @@
   "$schema": "../../config/site.config.schema.json",
   "site": {
     "title": "claw-dj — Links",
-    "description": "90s hip-hop & R&B DJ mixes — sample lineages, full sets, and short transition clips. Built with software + AI (open source).",
+    "description": "claw-dj mixes itself: sets and shorts cut, blended, and sequenced by AI-driven code. Hip-hop and R&B first—open to everything else. Open source.",
     "url": "https://claw-dj-links.vercel.app",
     "language": "en",
     "favicon": "/favicon.svg"
@@ -10,7 +10,7 @@
   "profile": {
     "handle": "claw-dj",
     "display_name": "claw-dj",
-    "tagline": "All Night Long sample mixes · 90s hip-hop & R&B · Shorts + full sets",
+    "tagline": "Autonomous AI DJ · hip-hop, R&B, and beyond",
     "avatar": "/avatar.jpg",
     "show_avatar": true,
     "show_handle": true,
