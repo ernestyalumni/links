@@ -40,16 +40,29 @@ Vercel CLI must be logged in on your machine (agents cannot complete browser log
 cd /Users/ernestyeung/.openclaw/workspace/repos/links
 git checkout deploy/claw-dj
 git pull
+npm install
 
-# interactive once
-npx vercel login
+# Prefer the project-local CLI (not bare `npx vercel` — that cache breaks on Node 26):
+npm run vercel:login
+# browser opens → approve
 
 # create a NEW project — do not select the personal "links" project
-npx vercel link --yes --project claw-dj-links
-# Set: scope = your account, link to existing? no → create claw-dj-links
-# Production branch in dashboard: deploy/claw-dj
+npx --no-install vercel link --yes --project claw-dj-links
+# or: ./node_modules/.bin/vercel link --yes --project claw-dj-links
 
-npx vercel deploy --prod --yes
+npm run vercel:prod
+# or: ./node_modules/.bin/vercel deploy --prod --yes
+```
+
+**If you see `Cannot find module ... xdg-app-paths`:** clear the broken npx cache and use the local binary:
+
+```sh
+rm -rf ~/.npm/_npx
+cd /Users/ernestyeung/.openclaw/workspace/repos/links
+npm install
+./node_modules/.bin/vercel login
+./node_modules/.bin/vercel link --yes --project claw-dj-links
+./node_modules/.bin/vercel deploy --prod --yes
 ```
 
 Or use the dashboard:

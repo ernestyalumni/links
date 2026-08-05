@@ -8,12 +8,18 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "vercel": "vercel",
+    "vercel:login": "vercel login",
+    "vercel:prod": "vercel deploy --prod"
   },
   "engines": {
     "node": ">=18"
   },
   "dependencies": {
-    "astro": "^4.16.0"
+    "astro": "^7.1.6"
+  },
+  "devDependencies": {
+    "vercel": "^41.0.0"
   }
 }
