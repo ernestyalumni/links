@@ -10,7 +10,7 @@ The claw-dj link-in-bio lives on **`deploy/claw-dj`** and should be a
 |---|---|
 | Branch | `deploy/claw-dj` (pushed to `origin`) |
 | Profile | claw-dj · dark-space · sample-lineage tagline |
-| Links | YouTube `@claw-dj`, TikTok `@clawdj6`, GitHub `InServiceOfX/claw-dj` |
+| Links | YouTube `@claw-dj`, TikTok `@claw__dj`, GitHub `InServiceOfX/claw-dj`, featured A/B mixes |
 | Avatar / OG | `public/avatar.jpg`, `public/og.png` (from All Night Long art) |
 | Validate + build | Passes locally (`python3 scripts/validate.py && npm run build`) |
 | Preview on Vercel | Builds on push, but **team SSO-gated** — not usable as a public bio link |
@@ -96,7 +96,7 @@ In the **existing** personal links project:
 
 | Platform | Field | Value |
 |---|---|---|
-| TikTok `@clawdj6` | Website | `https://claw-dj-links.vercel.app` (or your real prod URL) |
+| TikTok `@claw__dj` | Website | `https://claw-dj-links.vercel.app` (or your real prod URL) |
 | YouTube `@claw-dj` | Website / links | same |
 | Instagram / X | Bio link | same |
 

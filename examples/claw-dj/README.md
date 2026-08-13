@@ -11,7 +11,7 @@ identity assets** (avatar, OG banner, favicon).
 | Surface | URL |
 |---|---|
 | YouTube | https://www.youtube.com/@claw-dj |
-| TikTok | https://www.tiktok.com/@clawdj6 |
+| TikTok | https://www.tiktok.com/@claw__dj |
 | GitHub | https://github.com/InServiceOfX/claw-dj |
 
 ## Production branch (already set up in git)
